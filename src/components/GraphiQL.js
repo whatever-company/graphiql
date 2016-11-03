@@ -21,6 +21,7 @@ import { QueryEditor } from './QueryEditor';
 import { VariableEditor } from './VariableEditor';
 import { ResultViewer } from './ResultViewer';
 import { DocExplorer } from './DocExplorer';
+import { InstrumentationViewer } from './InstrumentationViewer';
 import CodeMirrorSizer from '../utility/CodeMirrorSizer';
 import getQueryFacts from '../utility/getQueryFacts';
 import getSelectedOperationName from '../utility/getSelectedOperationName';
@@ -345,6 +346,9 @@ export class GraphiQL extends React.Component {
               }
               <ResultViewer
                 ref={c => { this.resultComponent = c; }}
+                value={this.state.response}
+              />
+              <InstrumentationViewer
                 value={this.state.response}
               />
               {footer}

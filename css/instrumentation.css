@@ -1,0 +1,13 @@
+.instrumentation-window {
+  position: relative;
+  overflow-y: auto;
+  min-height: 300px;
+}
+
+.instrumentation-window .chart {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
