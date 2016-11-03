@@ -11,9 +11,13 @@ export class InstrumentationViewer extends React.Component {
 
   loadInstrumentation = ({value}) => {
     console.log(value)
-    this.setState({
-      instrumentation: value ? JSON.parse(value).instrumentation : null
-    })
+    try {
+      this.setState({
+        instrumentation: value ? JSON.parse(value).instrumentation : null
+      })
+    } catch (e) {
+      
+    }
   } 
 
   componentWillMount () {
