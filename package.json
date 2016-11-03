@@ -33,6 +33,7 @@
   },
   "scripts": {
     "test": "npm run lint && npm run check && npm run testonly",
+    "storybook": "start-storybook -p 9001 -c .storybook",
     "testonly": "babel-node ./node_modules/.bin/_mocha $npm_package_options_mocha",
     "lint": "eslint src",
     "check": "flow check",
