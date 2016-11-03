@@ -1,6 +1,6 @@
 {
-  "name": "graphiql",
-  "version": "0.7.8",
+  "name": "@whatever/graphiql",
+  "version": "0.0.1",
   "description": "An graphical interactive in-browser GraphQL IDE.",
   "contributors": [
     "Hyohyeon Jeong <asiandrummer@fb.com>",
@@ -37,9 +37,7 @@
     "testonly": "babel-node ./node_modules/.bin/_mocha $npm_package_options_mocha",
     "lint": "eslint src",
     "check": "flow check",
-    "build": ". ./resources/build.sh",
-    "preversion": ". ./resources/checkgit.sh && npm test",
-    "prepublish": ". ./resources/prepublish.sh"
+    "build": ". ./resources/build.sh"
   },
   "dependencies": {
     "codemirror": "^5.15.2",
